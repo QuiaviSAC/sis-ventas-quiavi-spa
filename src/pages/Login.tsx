@@ -69,8 +69,6 @@ export default function Login() {
               </label>
 
               <div className="relative">
-                
-
                 <input
                   type="email"
                   className="input-field pl-[40px] pr-[40px] text-sm text-[#1E1E1E] h-[46px]"
