@@ -264,9 +264,7 @@ function ProductoModal({ producto, categorias, unidades, onClose, onSave }: Prod
                         Precio (S/)
                       </label>
                       <div className="relative">
-                        <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-xs text-[#808080]">
-                          S/
-                        </span>
+                        
                         <input
                           type="text"
                           inputMode="decimal"
