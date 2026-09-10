@@ -1,10 +1,12 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useLocation } from "react-router";
 import { useAuth } from "../../context/AuthContext";
 
 const BREADCRUMBS: Record<string, string[]> = {
   "/app/dashboard":     ["Inicio", "Dashboard"],
   "/app/productos":     ["Inicio", "Productos"],
+  "/app/categorias":    ["Inicio", "Productos", "Categorías"],
+  "/app/unidades":      ["Inicio", "Productos", "Unidades de Medida"],
   "/app/inventario":    ["Inicio", "Inventario"],
   "/app/ventas":        ["Inicio", "Ventas"],
   "/app/reportes":      ["Inicio", "Reportes"],

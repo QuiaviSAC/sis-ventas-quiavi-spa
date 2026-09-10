@@ -1,16 +1,39 @@
-import { useNavigate, useLocation } from "react-router";
+﻿import { useNavigate, useLocation } from "react-router";
 import { useAuth } from "../../context/AuthContext";
 import MotorixLogo from "../ui/MotorixLogo";
 
 const NAV_ITEMS = [
   { path: "/app/dashboard",     label: "Dashboard",     icon: GridIcon },
   { path: "/app/productos",     label: "Productos",     icon: BoxIcon },
+  { path: "/app/categorias",    label: "Categorías",    icon: TagIcon },
+  { path: "/app/unidades",      label: "Unidades",      icon: ScaleIcon },
   { path: "/app/inventario",    label: "Inventario",    icon: WarehouseIcon },
   { path: "/app/ventas",        label: "Ventas",        icon: ShoppingIcon },
   { path: "/app/reportes",      label: "Reportes",      icon: ChartIcon },
   { path: "/app/usuarios",      label: "Usuarios",      icon: UsersIcon },
   { path: "/app/configuracion", label: "Configuracion", icon: SettingsIcon },
 ];
+
+function TagIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+      <line x1="7" y1="7" x2="7.01" y2="7" />
+    </svg>
+  );
+}
+
+function ScaleIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+      <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+      <path d="M7 21h10" />
+      <path d="M12 3v18" />
+      <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+    </svg>
+  );
+}
 
 function UsersIcon() {
   return (

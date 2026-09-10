@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from "react-router";
+﻿import { createBrowserRouter, Navigate } from "react-router";
 import type { ReactNode } from "react";
 import { useAuth } from "./context/AuthContext";
 import Spinner from "./components/ui/Spinner";
@@ -8,6 +8,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Productos from "./pages/Productos";
+import Categorias from "./pages/Categorias";
+import Unidades from "./pages/Unidades";
 import Inventario from "./pages/Inventario";
 import Ventas from "./pages/Ventas";
 import Reportes from "./pages/Reportes";
@@ -59,6 +61,8 @@ export const router = createBrowserRouter([
       { index: true, element: <Dashboard /> },
       { path: "dashboard", element: <Dashboard /> },
       { path: "productos", element: <Productos /> },
+      { path: "categorias", element: <Categorias /> },
+      { path: "unidades", element: <Unidades /> },
       { path: "inventario", element: <Inventario /> },
       { path: "ventas", element: <Ventas /> },
       { path: "reportes", element: <Reportes /> },
